@@ -155,6 +155,7 @@ int postfix_evaluation(string &str){
                 cout << "Invalid postfix expression: not enough operands." << endl;
                 return -1;
             }
+
             int op2 = s[top];
             s.pop_back();
             top--;
@@ -177,6 +178,7 @@ int postfix_evaluation(string &str){
                 top++;
             }
         }
+        
     }
 
     if(top == 0 && s.size() == 1){
